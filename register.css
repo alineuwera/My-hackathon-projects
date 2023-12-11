@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #333;
+    background-image: url(image/8.PNG);
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    position: fixed;
+    
+}
+nav h1{
+    color: white;
+    padding-left: 4em;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+    margin-left:50em;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+   text-decoration: none;
+   font-size: large;
+   color: white;
+}
+nav ul li:hover{
+   border-bottom: orange; 
+}
+
+/* end of nav barS */
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto 35%;
+    font-size: large;
+    line-height: 2;
+}
+input[type="text"],input[type="password"],input[type="number"],input[type="email"]{
+    border-radius: 2em;
+    height: 3em;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+input[type="submit"]{
+    margin-top: 2em;
+    border-radius: 1em;
+    height: 2em;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color: orange;
+    color: #fff;
+}
+.container-registration h1{
+    color: #fff;    
+    padding-top: 3em;
+    text-align: center;
+} 
+span{
+    color: orange;
+}
+label{
+    color: #fff;
+    font-size: 25px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My skills page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+     <!-- ====================================================================================================================== -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.min.js"></script>
+     <script src="./script.js"></script>
+ 
+ <!-- header section starts -->
+     <header>
+ 
+         <div class="user">
+             <img src="image/pic.jpg" alt="">
+             <h3 class="name">Uwera Aline</h3>
+             <p class="post">Back end Developer</p>
+             
+         </div>
+ 
+         <nav class="navbar">
+             <ul>
+                 <li><a href="index.html">home</a></li>
+                 <li><a href="skills.html">My skills</a></li>
+                 <li><a href="testimonial.html">Testimonies</a></li>
+                 <li><a href="contact.html">contact</a></li>
+             </ul>
+         </nav>
+ </header>
+ 
+ <div class="hide-nav">
+         <nav>
+             <ul>
+                 <li onclick=disp()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                 <li><a href="index.html">home</a></li>
+                 <li><a href="skills.html">My skills</a></li>
+                 <li><a href="testimonial.html">Testimonies</a></li>
+                 <li><a href="contact.html">contact</a></li>
+                
+             </ul>
+         </nav>
+ </div>
+     
+ <!-- header section ends -->
+ 
+ <div id="menu" class="fas fa-bars" onclick=dis()>
+ </div>
+
+ <!-- ====================================================================================================================== -->
+ <div class="skill"><h1>MY SKILLS</h1></div>
+    <div class="container-skills">
+        <box-icon name='x' color='#ffffff'size="30" onclick=hide()></box-icon>
+    <h3>HTML 95%</h3>
+    <div class="skills">
+        <div class="first-skill"></div>
+    </div>
+    <h3>CSS 85%</h3>
+    <div class="skills">
+        <div class="second-skill"></div>
+    </div>
+    <h3>JAVASCRIPT 30%</h3>
+    <div class="skills">
+        <div class="third-skill"></div>
+    </div>
+    <h3>PHP 70%</h3>
+    <div class="skills">
+        <div class="forth-skill"></div>
+    </div>
+    <h3>C++ 50% </h3>
+    <div class="skills">
+        <div class="firth-skill"></div>
+    </div>
+</div>
+
+<button onclick=show()>Click here to view my skills.</button>
+
+<script>
+    function show(){
+        var a = document.querySelector(".container-skills");
+        a.style.display = "block";
+    }
+
+    function hide(){
+        var a = document.querySelector(".container-skills");
+        a.style.display = "none";
+    }
+</script>
+</body>
+</html>

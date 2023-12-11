@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+*::selection{
+    background-color: orange;
+    color: #333;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto 35%;
+    margin-top: 3em;
+    color: #fff;
+}
+input[type="text"]{
+    height: 2.5em;
+    border-radius: 3em;
+    text-align: center;
+    border: none;
+    color: black;
+    background-color: #fff;
+    font-size: 19px;
+    margin-top: 10px;
+}
+textarea{
+    border-radius: 10px;
+    background-color: #fff;
+}
+label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+input[type="submit"]{
+    background-color: #fff;
+    color: black;
+    margin-top: 1.5em;
+    height: 2em;
+    border-radius: 5em;
+    font-size: 25px;
+    border: none;
+}
+input[type="submit"]:hover{
+    background-color: orange;
+    color: white;
+    
+}
+
+.tel h5{
+    color: orange;
+}
+.tel h5:hover{
+    width: 70%;
+    border-radius: 5em;
+    text-align: center;
+    cursor: pointer;
+}
+.tel{
+    margin-left: 7em;
+    line-height: 2.5;
+    font-size: large;
+    font-weight: 100;
+}
+.tel p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.social{
+   
+    /* background-color: #fff; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7em; 
+    line-height: 2.5;
+    font-size: large;
+    
+}
+.social h5{
+    cursor: pointer;
+    color: orange;
+}
+.social h5:hover{
+    width: 70%;
+    border-radius: 5em;
+    text-align: center;
+}
+.social p a:hover{
+    /* background-color: orange; */
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form h1{
+    text-align: center;
+    color: orange;
+}
+h1:hover{
+    /* background-color: orange; */
+    cursor: pointer;
+    border-radius: 5em;
+}
+.locat h5{
+    color: orange;
+}
+.locat{
+    color: #fff;
+    padding-top: 4em;
+    font-size: large;
+}
+.locat h5:hover{
+    width: 70%;
+    border-radius: 5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --yellow:#f9ca24;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background-color: orange;
+    color: #333;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html ::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html ::-webkit-scrollbar-track{
+    background: #222;
+}
+html ::-webkit-scrollbar-thumb{
+    background:orange;
+}
+body{
+    /* background-color: #111; */
+    overflow-x: hidden;
+    padding-left: 35rem;
+
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;  
+}
+.btn:hover{
+    background: orange;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .10rem solid orange;
+
+}
+header .user .name{
+    font-size:3.5rem;
+    color: #fff;
+    opacity: 0.8;
+
+}
+header .user .post{
+    font-size:2rem;
+    color: #eee;
+    opacity: 0.6;
+
+}
+header .navbar{
+   width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #333;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: orange;
+
+
+}
+
+/* nav bar===============================================*/
+.hide-nav{
+    width: 20%;
+    float: right;
+    display: none;
+    z-index: 999;
+    
+ }
+ .hide-nav ul{
+     list-style: none;
+ }
+.hide-nav ul li a{
+    
+   display: flex;
+   padding-left: 20px;
+   margin: 1.5rem 0;
+   background: #333;
+   color: #fff;
+   font-size: 2rem;
+   border-radius: 2rem;
+ }
+ .hide-nav ul li a:hover{
+     background: orange;
+ 
+ 
+ }
+
+ /* nav bar===============================================*/
+
+
+
+ /* media queries */
+@media(max-width:1200px){
+
+    html{
+        font-size: 55%;
+
+    }
+    .home{
+        padding: 18rem 4rem;
+    }
+
+}
+@media (width>=991px) {
+    .hide-nav{
+        display: none !important;
+    }
+    
+}
+
+@media(max-width:991px){
+
+    header{
+        left: -120%;
+    }
+
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width:400px){
+
+    header{
+       width: 100vw;
+
+    }
+}
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:400px){
+
+    header{
+       width: 100vw;
+
+    }
+}
+
+@media (max-width:400px){
+   .hide-nav{
+    width: 100%;
+    display: none;
+   }
+}
