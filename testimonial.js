@@ -11,4 +11,4 @@ function showTestimonial() {
 showTestimonial();
 
 // Automatically switch testimonials every 3 seconds
-setInterval(showTestimonial, 3000);
+setInterval(showTestimonial,3000);

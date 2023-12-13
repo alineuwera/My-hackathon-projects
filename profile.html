@@ -17,14 +17,17 @@
             <li><a href="profile.html">PROFILE</a></li>
         </ul>
     </nav>
-
-
-    <!-- end of nav bar -->
-    <div class="profile">
-        <h1><span>MY</span> PROFILE</h1>
-        <img src="image/aline.jpg" alt="">
-        <figcaption>I am <span>Uwera</span> Aline.</figcaption>
-        <p>I am a Back end developer.</p>
-    </div>
+    <div class="profile-card">
+        <img id="avatar" src="image/aline.jpg" alt="User Avatar">
+        <h1 id="username">Uwera aline</h1>
+        <p id="bio">Backend Developer</p>
+        <div id="buttons">
+          <button onclick="changeAvatar()">Change Avatar</button>
+          <button onclick="updateProfile()">Update Profile</button>
+        </div>
+      </div>
+      
+      <script src="profile.js"></script>
+    </body>
 </body>
 </html>
